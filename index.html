@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="/static/js/jquery.1.4.2-min.js" ></script>
+      <script src="/static/js/123.js" ></script>
+      <link href="/static/css/123.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>mis_inutility</title>
+  </head>
+  <body>
+    <div id="app" v-model = "word"></div><div id="fontdiv" class="fontdiv"></div>
+    <div class="pushtext">  
+        <textarea id="message" maxlength="15" ></textarea>  
+        <div onclick="pushtext()" class="pushbtn">发送</div>  
+    </div>  
+    <!-- built files will be auto injected -->
+    <script>
+      var t = document.getElementById("fontdiv");
+      t.onmouseover=function(){
+        t.style.visibility='hidden';
+        setTimeout("t.style.visibility='visible';",1000);
+      }
+    </script>
+  </body>
+</html>
